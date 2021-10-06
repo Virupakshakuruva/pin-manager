@@ -9,3 +9,6 @@ API:
     service name: pin-manage-controller
 
 Note: DB is H2 database using in-memory
+
+Run using dockor:
+docker run -p 9090:9090 virupakshakuruva/mmv2-pin-manager:0.0.1-SNAPSHOT
