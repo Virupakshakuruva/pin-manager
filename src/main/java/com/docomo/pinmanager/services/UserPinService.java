@@ -143,9 +143,9 @@ public class UserPinService {
             Calendar cal = Calendar.getInstance();
             // remove next line if you're always using the current time.
             cal.setTime(currentDate);
-            cal.add(Calendar.HOUR, +userPin.getPinRemovalInHour());
+            cal.add(Calendar.HOUR, -userPin.getPinRemovalInHour());
             Date oneHourBack = cal.getTime();
-            valid = userPin.getCreated_date().after(oneHourBack);
+            valid =   valid = oneHourBack.before(userPin.getCreated_date());
 
             // check validated Status
             return valid;
