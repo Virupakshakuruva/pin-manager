@@ -1,7 +1,7 @@
 # pin-manager
-I developed this application using Spring Boot framework.
-To build application by run the "mvn clean install".
-To run the application "mvn spring-boot: run"
+I have developed this application using Spring Boot framework.
+Use the "mvn clean install" to build this application.
+To run the application use "mvn spring-boot: run" maven commands.
 
 API:
  Please visit the swagger-ui for API documentation
